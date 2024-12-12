@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		63509AA12D069A5000307797 /* Highcharts in Frameworks */ = {isa = PBXBuildFile; productRef = 63509AA02D069A5000307797 /* Highcharts */; };
+		63509AAD2D09E87F00307797 /* SwiftSpinner in Frameworks */ = {isa = PBXBuildFile; productRef = 63509AAC2D09E87F00307797 /* SwiftSpinner */; };
+		63B9E2822CF39B31009972C2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 63B9E2812CF39B31009972C2 /* Alamofire */; };
+		63B9E2F82CF462EE009972C2 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 63B9E2F72CF462EE009972C2 /* Toast */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6333D09C2CF1189F008B8FDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +36,22 @@
 		6333D0A52CF1189F008B8FDA /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		63B9E30C2CF537AB009972C2 /* Exceptions for "WeatherApp" folder in "WeatherApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Untitled.swift,
+			);
+			target = 6333D08A2CF1189D008B8FDA /* WeatherApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6333D08D2CF1189D008B8FDA /* WeatherApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				63B9E30C2CF537AB009972C2 /* Exceptions for "WeatherApp" folder in "WeatherApp" target */,
+			);
 			path = WeatherApp;
 			sourceTree = "<group>";
 		};
@@ -52,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63509AAD2D09E87F00307797 /* SwiftSpinner in Frameworks */,
+				63509AA12D069A5000307797 /* Highcharts in Frameworks */,
+				63B9E2F82CF462EE009972C2 /* Toast in Frameworks */,
+				63B9E2822CF39B31009972C2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +136,10 @@
 			);
 			name = WeatherApp;
 			packageProductDependencies = (
+				63B9E2812CF39B31009972C2 /* Alamofire */,
+				63B9E2F72CF462EE009972C2 /* Toast */,
+				63509AA02D069A5000307797 /* Highcharts */,
+				63509AAC2D09E87F00307797 /* SwiftSpinner */,
 			);
 			productName = WeatherApp;
 			productReference = 6333D08B2CF1189D008B8FDA /* WeatherApp.app */;
@@ -195,6 +223,12 @@
 			);
 			mainGroup = 6333D0822CF1189D008B8FDA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				63B9E2802CF39B31009972C2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				63B9E2F62CF462EE009972C2 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				63509A9F2D06618800307797 /* XCRemoteSwiftPackageReference "highcharts-ios" */,
+				63509AAB2D09E87F00307797 /* XCRemoteSwiftPackageReference "SwiftSpinner" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6333D08C2CF1189D008B8FDA /* Products */;
 			projectDirPath = "";
@@ -552,6 +586,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63509A9F2D06618800307797 /* XCRemoteSwiftPackageReference "highcharts-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/highcharts/highcharts-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 11.4.8;
+			};
+		};
+		63509AAB2D09E87F00307797 /* XCRemoteSwiftPackageReference "SwiftSpinner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/icanzilb/SwiftSpinner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+		63B9E2802CF39B31009972C2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+		63B9E2F62CF462EE009972C2 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63509AA02D069A5000307797 /* Highcharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63509A9F2D06618800307797 /* XCRemoteSwiftPackageReference "highcharts-ios" */;
+			productName = Highcharts;
+		};
+		63509AAC2D09E87F00307797 /* SwiftSpinner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63509AAB2D09E87F00307797 /* XCRemoteSwiftPackageReference "SwiftSpinner" */;
+			productName = SwiftSpinner;
+		};
+		63B9E2812CF39B31009972C2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63B9E2802CF39B31009972C2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		63B9E2F72CF462EE009972C2 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63B9E2F62CF462EE009972C2 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6333D0832CF1189D008B8FDA /* Project object */;
 }
